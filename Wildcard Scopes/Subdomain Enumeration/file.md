@@ -2,7 +2,6 @@
 - Enumerate Subdomains via ASN
 - Subfinder Tool
 - knockpy Tool
-- amass Tool
 - Third Party Websites & Other Tools
 
 
@@ -21,7 +20,7 @@ whois is a command-line utility for querying WHOIS databases to retrieve informa
 - grep -Eo "([0-9.]+){4}/[0-9]+" extracts IPv4 address prefixes (CIDR notation) from the WHOIS response.
 - uniq -u filters out duplicate entries and displays only unique IP prefixes.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 2. **Use https://github.com/j3ssie/metabigor Tool To get IP's**
 ```bash
@@ -29,7 +28,7 @@ whois is a command-line utility for querying WHOIS databases to retrieve informa
 echo "company" | metabigor net --org -o /tmp/metabigor.txt
 ```
 
--------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 3. **Now Pick any ip save it in ip.txt file and run the following command to enumerate the subdomains:-**
 ```bash
@@ -41,13 +40,14 @@ cat ip.txt | mapcidr -si -silent -o ipscat | hakrevdns -t 100 -d | anew asn_doma
 - anew domains.txt.txt appends the results of reverse DNS lookups to the file domains.txt.
 
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Method 2:- Subfinder Tool
 ```bash
 - subfinder -dL scope.txt -all -v | tee subfinder.txt
 ```
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Method 3:- knockpy Tool
 
@@ -79,23 +79,10 @@ knockpy domain.com: This part of the command tells knockpy to perform subdomain 
 
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-
-
-## Method 4:- amass Tool
-
-```bash
-A lot of you are not aware of API keys. There are many companies that provide monitoring services or more. For setting up in Amass - https://github.com/owasp-amass/amass/blob/master/examples/datasources.yaml.
-Here is a good Article to learn more about the usage - https://hakluke.medium.com/haklukes-guide-to-amass-how-to-use-amass-more-effectively-for-bug-bounties-7c37570b83f7﻿.
-```
-
-
-
-
-
-
-## Method 5:- Third Party Websites & Other Tools
+## Method 4:- Third Party Websites & Other Tools
 
 - Shodan:- https://github.com/SmoZy92/Shodomain
 ```
@@ -116,9 +103,10 @@ python censys-subdomain-finder.py <target.com>
 - Seckrd:- https://seckrd.com/subdomain-finder.php
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-## Method 6:- some more ways
+## Method 5:- some more ways
 
 - DNSRECON Tool:- ```python dnsrecon.py -n <name_server> -d <target.com> -D subdomains-top1mil-20000.txt -t brt -a -s -b -y -k -w -z```
 - DIG:- ```dig +multi AXFR @<name_server> <target.com>```
