@@ -2,9 +2,9 @@
 
 
 ### Methods:-
-**1. Use ChatGPT:-** All Acquisitions of <target> eg. Google
-**2. Search on Google:-** Acquisitions of <target> eg. Google
-**3. Discovering Target Using ASN (IP Blocks):-**
+1. **Use ChatGPT:-** All Acquisitions of <target> eg. Google
+2. **Search on Google:-** Acquisitions of <target> eg. Google
+3. **Discovering Target Using ASN (IP Blocks):-**
 - https://bgp.he.net/
 - https://whois.arin.net/ui/query.do
 - https://apps.db.ripe.net/db-web-ui/fulltextsearch
