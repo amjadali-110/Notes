@@ -9,14 +9,13 @@
 - https://whois.arin.net/ui/query.do
 - https://apps.db.ripe.net/db-web-ui/fulltextsearch
   
-**4. Brand Discovery Acquisitions:-**
+4. **Brand Discovery Acquisitions:-**
 - viewdns.info
 - https://www.whoxy.com/<target.com>#history
 - https://tools.whoisxmlapi.com/reverse-whois-search
 
-*Use the following website to cross verify the Acquisition:-*
-https://www.crunchbase.com/
+*Use this website to cross verify the Acquisition:-* https://www.crunchbase.com/
 
-*Also use google to cross verify the Acquisition:-*
-Is <target> is Acquisition of <Parent Company>
+*Also use Google to cross verify the Acquisition:-*
+`Is <target> is Acquisition of <Parent Company>`
 Eg.:- Is virustotal is Acquisition of Google
