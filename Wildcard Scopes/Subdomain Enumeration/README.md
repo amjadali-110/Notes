@@ -120,12 +120,6 @@ python censys-subdomain-finder.py <target.com>
 
 
 
-
-
-sed 's/^https\?:\/\///' alive_subs.txt > without_protocol_alive_subs.txt
-
-
-
 >> Origin IP
 https://infosecwriteups.com/origin-ip-found-d-dos-waf-cloudflare-protection-bypassed-41fc280ccf8f
 https://github.com/Dheerajmadhukar/Lilly
