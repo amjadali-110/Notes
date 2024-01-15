@@ -21,6 +21,7 @@ whois is a command-line utility for querying WHOIS databases to retrieve informa
 - uniq -u filters out duplicate entries and displays only unique IP prefixes.
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 2. **Use https://github.com/j3ssie/metabigor Tool To get IP's**
 ```bash
@@ -29,6 +30,7 @@ echo "company" | metabigor net --org -o /tmp/metabigor.txt
 ```
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 3. **Now Pick any ip save it in ip.txt file and run the following command to enumerate the subdomains:-**
 ```bash
@@ -64,7 +66,7 @@ knockpy domain.com: This part of the command tells knockpy to perform subdomain 
 --dns 8.8.8.8: This part of the command specifies a custom DNS server to be used for the enumeration process. In this case, "8.8.8.8" is Google's public DNS server.
 
 
->> Most Popular DNS:-
+> Most Popular DNS:-
 
 - Google DNS addresses: 8.8.8.8
 - CloudFlare DNS addresses:
