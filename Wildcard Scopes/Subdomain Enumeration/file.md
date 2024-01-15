@@ -85,9 +85,10 @@ knockpy domain.com: This part of the command tells knockpy to perform subdomain 
 
 ## Method 4:- amass Tool
 
+```bash
 A lot of you are not aware of API keys. There are many companies that provide monitoring services or more. For setting up in Amass - https://github.com/owasp-amass/amass/blob/master/examples/datasources.yaml.
 Here is a good Article to learn more about the usage - https://hakluke.medium.com/haklukes-guide-to-amass-how-to-use-amass-more-effectively-for-bug-bounties-7c37570b83f7﻿.
-
+```
 
 
 
@@ -96,32 +97,34 @@ Here is a good Article to learn more about the usage - https://hakluke.medium.co
 
 ## Method 5:- Third Party Websites & Other Tools
 
-Shodan:- https://github.com/SmoZy92/Shodomain
-- python shodomain.py d89q920HpZdesXZuhM8MOqKChoaLNO6a getvero.com
+- Shodan:- https://github.com/SmoZy92/Shodomain
+```
+python shodomain.py <api_key> <target.com>
+```
 
-Censys:- https://github.com/christophetd/censys-subdomain-finder
-- python censys-subdomain-finder.py getvero.com
+- Censys:- https://github.com/christophetd/censys-subdomain-finder
+```
+python censys-subdomain-finder.py <target.com>
+```
 
-https://www.virustotal.com/gui/domain/getvero.com/relations
+- Github:- https://github.com/gwen001/github-subdomains
 
-https://shrewdeye.app/search/<target.com>
-https://www.secrash.com/p/subdomain-scanner.html
-https://seckrd.com/subdomain-finder.php
-
-Github:- https://github.com/gwen001/github-subdomains
-
-
+##### Websites
+- Virustotal:- https://www.virustotal.com/gui/domain/<target.com>/relations
+- Shrewdeye:- https://shrewdeye.app/search/<target.com>
+- Secrash:- https://www.secrash.com/p/subdomain-scanner.html
+- Seckrd:- https://seckrd.com/subdomain-finder.php
 
 
 
 
 ## Method 6:- some more ways
 
-• DNSRECON Tool:- python dnsrecon.py -n <name_server> -d <target.com> -D subdomains-top1mil-20000.txt -t brt -a -s -b -y -k -w -z
-• DIG:- dig +multi AXFR @<name_server> <target.com>
-• ZONE WALKING NSEC DIG:- dig +short NSEC <target.com>
+- DNSRECON Tool:- ```python dnsrecon.py -n <name_server> -d <target.com> -D subdomains-top1mil-20000.txt -t brt -a -s -b -y -k -w -z```
+- DIG:- ```dig +multi AXFR @<name_server> <target.com>```
+- ZONE WALKING NSEC DIG:- ```dig +short NSEC <target.com>```
 
-To know name_server:- dig <domain> -t ns
+*To know name_server:-* ```dig <domain> -t ns```
 
 
 
@@ -136,6 +139,3 @@ sed 's/^https\?:\/\///' alive_subs.txt > without_protocol_alive_subs.txt
 >> Origin IP
 https://infosecwriteups.com/origin-ip-found-d-dos-waf-cloudflare-protection-bypassed-41fc280ccf8f
 https://github.com/Dheerajmadhukar/Lilly
-
-
-
