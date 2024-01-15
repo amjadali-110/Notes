@@ -1,6 +1,8 @@
 ## Googl Dorks
+```bash
 site: target.com inurl:index.php?option=com
 site: target.com inurl:Itemid= -intext:Joomla
+```
 *This dork searches for a vulnerable Joomla component where we can inject our XSS payload.*
 
 
