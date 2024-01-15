@@ -1,5 +1,6 @@
 # WP-exposed (wp-config sensitive) files!🚨
 
+```bash
 /wp-config.php-backup
 /wp-config.php.orig
 /.wp-config.php.swp
@@ -19,3 +20,4 @@
 /wp-config.php~
 /wp-config.php.original
 /_wpeprivate/config.json
+```
